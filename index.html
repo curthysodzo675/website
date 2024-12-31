@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne Année 2025 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            color: #fff;
+            background: url('1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #f9d342;
+            text-shadow: 0 0 10px gold, 0 0 20px orange, 0 0 30px red;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        p.subtitle {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: #f3f3f3;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .wishes {
+            margin: 30px auto;
+            padding: 20px 30px;
+            background: rgba(0, 0, 0, 0.5); 
+            color: #fff;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background-color: blue;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background-color: #ff2e63;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px gold, 0 0 20px orange, 0 0 30px red; }
+            100% { text-shadow: 0 0 20px white, 0 0 30px lightblue; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎆 Bonne Année 2025 ! 🎆</h1>
+        <p class="subtitle">Que cette année soit remplie de bonheur et de succès ✨</p>
+    </header>
+    <main>
+        <div class="wishes">
+            <p>
+                En ce début d'année, je vous souhaite tout le meilleur : bonheur, santé, 
+                et succès dans vos projets. Que 2025 soit une année marquée par des moments magiques 
+                et des souvenirs inoubliables avec vos proches !
+            </p>
+        </div>
+        <button onclick="toggleMusic()">🎵 Activer/Désactiver la musique</button>
+    </main>
+    <footer>
+        <p>© 2025 Bonne Année | Créé avec ❤️ pour célébrer l'esprit festif</p>
+    </footer>
+    <audio id="music" autoplay loop>
+        <source src="Collectif_Métissé___Bonne_Année(128k).mp3" type="audio/mp3">
+        Votre navigateur ne supporte pas la lecture audio.
+    </audio>
+    <script>
+        function toggleMusic() {
+            const music = document.getElementById('music');
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
